@@ -16,7 +16,14 @@ The verified local workflow includes project foundations, research planning, sav
 
 ## Main workflows
 
-![Content workflow](diagrams/workflow.svg)
+```text
+Project setup
+→ research and evidence
+→ content development
+→ revision history
+→ human approval
+→ export
+```
 
 ## Contribution and responsibilities
 
@@ -30,15 +37,11 @@ I led the product and workflow design, defined the important business rules and 
 
 ## Technical architecture
 
-![Public-safe architecture](diagrams/architecture.svg)
-
 The verified local stack uses Next.js 15, React 19, TypeScript, FastAPI, SQLAlchemy, SQLite, Vitest, and Python tests.
 
 ## Data and workflow design
 
-![Sanitized data relationships](diagrams/data.svg)
-
-Projects own research questions, research sources, revisioned artifacts, approval records, history events, and export-package records. The ERD shows only foreign-key relationships verified from the implemented SQLAlchemy models. An approved revision is superseded rather than edited or deleted by the approval service.
+Projects own research questions, research sources, revisioned artifacts, approval records, history events, and export-package records. These relationships are verified from the implemented SQLAlchemy models. An approved revision is superseded rather than edited or deleted by the approval service.
 
 ## Validation, permissions, and safeguards
 
