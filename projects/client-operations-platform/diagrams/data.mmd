@@ -1,7 +1,8 @@
+%% Public SVG renders these 13 verified relationships in separated sections.
+%%{init: {"theme":"base","flowchart":{"curve":"step","nodeSpacing":36,"rankSpacing":48},"themeVariables":{"background":"#FCFCFD","primaryColor":"#FFFFFF","primaryTextColor":"#262330","primaryBorderColor":"#8B5CF6","lineColor":"#6D28D9","fontFamily":"Arial, Helvetica, sans-serif","fontSize":"18px"}}}%%
 erDiagram
   CUSTOMER ||--o{ PLAYER : owns
   CUSTOMER ||--o{ BOOKING : creates
-  CUSTOMER ||--o{ PAYMENT : makes
   CUSTOMER o|--o{ BOOKING_PARTICIPANT : may_claim
   PLAYER o|--o{ BOOKING_PARTICIPANT : may_fill
   GUARDIAN o|--o{ BOOKING_PARTICIPANT : may_support
@@ -9,6 +10,7 @@ erDiagram
   PLAYER ||--o{ WAIVER : signs
   GUARDIAN o|--o{ WAIVER : may_sign_for
   BOOKING o|--o{ WAIVER : may_scope
+  CUSTOMER ||--o{ PAYMENT : makes
   BOOKING o|--o{ PAYMENT : may_receive
   PLAYER ||--o{ DAILY_CHECK_IN : records
   BOOKING o|--o{ DAILY_CHECK_IN : may_group
