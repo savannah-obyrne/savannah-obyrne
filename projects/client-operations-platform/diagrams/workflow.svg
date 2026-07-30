@@ -1,26 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="360" viewBox="0 0 1320 360" role="img" aria-labelledby="title desc">
-  <title id="title">User Workflow</title><desc id="desc">client operations platform</desc>
-  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#8b5cf6"/></marker></defs>
-  <rect width="100%" height="100%" fill="#090711"/>
-  <text x="40" y="55" fill="#f8fafc" font-family="Arial" font-size="30" font-weight="700">User Workflow</text>
-  <text x="40" y="88" fill="#94a3b8" font-family="Arial" font-size="16">client operations platform</text>
-  <line x1="220" y1="191" x2="240" y2="191" stroke="#8b5cf6" stroke-width="4" marker-end="url(#arrow)"/><rect x="40" y="150" width="180" height="82" rx="14" fill="#171425" stroke="#8b5cf6" stroke-width="2"/>
-      <text x="130" y="185" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="700">Customer request</text>
-      <text x="130" y="209" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="15"></text>
-<line x1="428" y1="191" x2="448" y2="191" stroke="#8b5cf6" stroke-width="4" marker-end="url(#arrow)"/><rect x="248" y="150" width="180" height="82" rx="14" fill="#171425" stroke="#8b5cf6" stroke-width="2"/>
-      <text x="338" y="185" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="700">Participant</text>
-      <text x="338" y="209" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="15">details</text>
-<line x1="636" y1="191" x2="656" y2="191" stroke="#8b5cf6" stroke-width="4" marker-end="url(#arrow)"/><rect x="456" y="150" width="180" height="82" rx="14" fill="#171425" stroke="#8b5cf6" stroke-width="2"/>
-      <text x="546" y="185" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="700">Waiver and</text>
-      <text x="546" y="209" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="15">guardian</text>
-<line x1="844" y1="191" x2="864" y2="191" stroke="#8b5cf6" stroke-width="4" marker-end="url(#arrow)"/><rect x="664" y="150" width="180" height="82" rx="14" fill="#171425" stroke="#8b5cf6" stroke-width="2"/>
-      <text x="754" y="185" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="700">Payment state</text>
-      <text x="754" y="209" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="15"></text>
-<line x1="1052" y1="191" x2="1072" y2="191" stroke="#8b5cf6" stroke-width="4" marker-end="url(#arrow)"/><rect x="872" y="150" width="180" height="82" rx="14" fill="#171425" stroke="#8b5cf6" stroke-width="2"/>
-      <text x="962" y="185" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="700">Staff review</text>
-      <text x="962" y="209" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="15"></text>
-<rect x="1080" y="150" width="180" height="82" rx="14" fill="#171425" stroke="#8b5cf6" stroke-width="2"/>
-      <text x="1170" y="185" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="700">Check-in</text>
-      <text x="1170" y="209" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="15"></text>
-  <text x="40" y="325" fill="#64748b" font-family="Arial" font-size="14">Public-safe conceptual view derived from verified source and local behaviour.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="550" viewBox="0 0 1200 550" role="img" aria-labelledby="title desc">
+  <title id="title">Client Operations customer-to-check-in workflow</title>
+  <desc id="desc">A six-stage sequence from customer request through participants, safety, payment, staff review, and arrival check-in.</desc>
+  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M1 1 L11 6 L1 11 Z" fill="#6D28D9"/></marker></defs>
+  <style>.canvas{fill:#FCFCFD}.stage{fill:#FFFFFF;stroke:#D8D5E0;stroke-width:2}.number{fill:#6D28D9}.connector{fill:none;stroke:#6D28D9;stroke-width:3}.title{fill:#262330;font:700 30px Arial,Helvetica,sans-serif}.subtitle{fill:#625D6B;font:400 18px Arial,Helvetica,sans-serif}.numberText{fill:#FFFFFF;font:700 20px Arial,Helvetica,sans-serif}.stageName{fill:#262330;font:700 22px Arial,Helvetica,sans-serif}.stageDetail{fill:#625D6B;font:400 18px Arial,Helvetica,sans-serif}</style>
+  <rect class="canvas" width="1200" height="550"/><text class="title" x="60" y="54">Customer-to-check-in workflow</text><text class="subtitle" x="60" y="84">Six verified stages · numbered in reading order</text>
+  <rect class="stage" x="70" y="120" width="330" height="150" rx="14"/><circle class="number" cx="112" cy="166" r="24"/><text class="numberText" x="112" y="173" text-anchor="middle">1</text><text class="stageName" x="150" y="166">Request</text><text class="stageDetail" x="150" y="207">Customer request</text>
+  <path class="connector" d="M400 195 H423" marker-end="url(#arrow)"/><rect class="stage" x="435" y="120" width="330" height="150" rx="14"/><circle class="number" cx="477" cy="166" r="24"/><text class="numberText" x="477" y="173" text-anchor="middle">2</text><text class="stageName" x="515" y="166">Participants</text><text class="stageDetail" x="515" y="207">Participant details</text>
+  <path class="connector" d="M765 195 H788" marker-end="url(#arrow)"/><rect class="stage" x="800" y="120" width="330" height="150" rx="14"/><circle class="number" cx="842" cy="166" r="24"/><text class="numberText" x="842" y="173" text-anchor="middle">3</text><text class="stageName" x="880" y="166">Safety</text><text class="stageDetail" x="880" y="207">Waiver and guardian</text>
+  <path class="connector" d="M965 270 V343" marker-end="url(#arrow)"/><rect class="stage" x="800" y="355" width="330" height="150" rx="14"/><circle class="number" cx="842" cy="401" r="24"/><text class="numberText" x="842" y="408" text-anchor="middle">4</text><text class="stageName" x="880" y="401">Payment</text><text class="stageDetail" x="880" y="442">Payment state</text>
+  <path class="connector" d="M800 430 H777" marker-end="url(#arrow)"/><rect class="stage" x="435" y="355" width="330" height="150" rx="14"/><circle class="number" cx="477" cy="401" r="24"/><text class="numberText" x="477" y="408" text-anchor="middle">5</text><text class="stageName" x="515" y="401">Review</text><text class="stageDetail" x="515" y="442">Staff review</text>
+  <path class="connector" d="M435 430 H412" marker-end="url(#arrow)"/><rect class="stage" x="70" y="355" width="330" height="150" rx="14"/><circle class="number" cx="112" cy="401" r="24"/><text class="numberText" x="112" y="408" text-anchor="middle">6</text><text class="stageName" x="150" y="401">Arrival</text><text class="stageDetail" x="150" y="442">Check-in</text>
 </svg>
