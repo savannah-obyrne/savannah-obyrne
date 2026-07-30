@@ -1,12 +1,17 @@
-flowchart LR
-  N0["Next.js interface"]
-  N1["Validated API routes"]
-  N2["Domain services"]
-  N3["Prisma data layer"]
-  N4["PostgreSQL schema"]
-  N5["Reports"]
+%% Public SVG uses this verified sequence in a compact vertical layer layout.
+%%{init: {"theme":"base","flowchart":{"curve":"linear","nodeSpacing":28,"rankSpacing":38},"themeVariables":{"background":"#FCFCFD","primaryColor":"#F7F5FF","primaryTextColor":"#262330","primaryBorderColor":"#8B5CF6","lineColor":"#6D28D9","fontFamily":"Arial, Helvetica, sans-serif","fontSize":"18px"}}}%%
+flowchart TB
+  N0["User experience<br/>Next.js interface"]
+  N1["Application and API<br/>Validated API routes"]
+  N2["Business logic<br/>Domain services"]
+  N3["Data and storage<br/>Prisma data layer"]
+  N4["Data and storage<br/>PostgreSQL schema"]
+  N5["Verified output boundary<br/>Reports"]
   N0 --> N1
   N1 --> N2
   N2 --> N3
   N3 --> N4
   N4 --> N5
+
+  classDef layer fill:#F7F5FF,stroke:#8B5CF6,color:#262330,stroke-width:2px;
+  class N0,N1,N2,N3,N4,N5 layer;
