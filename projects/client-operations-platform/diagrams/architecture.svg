@@ -1,26 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="360" viewBox="0 0 1320 360" role="img" aria-labelledby="title desc">
-  <title id="title">Public-Safe Architecture</title><desc id="desc">client operations platform</desc>
-  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#8b5cf6"/></marker></defs>
-  <rect width="100%" height="100%" fill="#090711"/>
-  <text x="40" y="55" fill="#f8fafc" font-family="Arial" font-size="30" font-weight="700">Public-Safe Architecture</text>
-  <text x="40" y="88" fill="#94a3b8" font-family="Arial" font-size="16">client operations platform</text>
-  <line x1="220" y1="191" x2="240" y2="191" stroke="#8b5cf6" stroke-width="4" marker-end="url(#arrow)"/><rect x="40" y="150" width="180" height="82" rx="14" fill="#171425" stroke="#8b5cf6" stroke-width="2"/>
-      <text x="130" y="185" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="700">Next.js interface</text>
-      <text x="130" y="209" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="15"></text>
-<line x1="428" y1="191" x2="448" y2="191" stroke="#8b5cf6" stroke-width="4" marker-end="url(#arrow)"/><rect x="248" y="150" width="180" height="82" rx="14" fill="#171425" stroke="#8b5cf6" stroke-width="2"/>
-      <text x="338" y="185" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="700">Validated API</text>
-      <text x="338" y="209" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="15">routes</text>
-<line x1="636" y1="191" x2="656" y2="191" stroke="#8b5cf6" stroke-width="4" marker-end="url(#arrow)"/><rect x="456" y="150" width="180" height="82" rx="14" fill="#171425" stroke="#8b5cf6" stroke-width="2"/>
-      <text x="546" y="185" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="700">Domain services</text>
-      <text x="546" y="209" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="15"></text>
-<line x1="844" y1="191" x2="864" y2="191" stroke="#8b5cf6" stroke-width="4" marker-end="url(#arrow)"/><rect x="664" y="150" width="180" height="82" rx="14" fill="#171425" stroke="#8b5cf6" stroke-width="2"/>
-      <text x="754" y="185" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="700">Prisma data layer</text>
-      <text x="754" y="209" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="15"></text>
-<line x1="1052" y1="191" x2="1072" y2="191" stroke="#8b5cf6" stroke-width="4" marker-end="url(#arrow)"/><rect x="872" y="150" width="180" height="82" rx="14" fill="#171425" stroke="#8b5cf6" stroke-width="2"/>
-      <text x="962" y="185" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="700">PostgreSQL schema</text>
-      <text x="962" y="209" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="15"></text>
-<rect x="1080" y="150" width="180" height="82" rx="14" fill="#171425" stroke="#8b5cf6" stroke-width="2"/>
-      <text x="1170" y="185" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="700">Reports</text>
-      <text x="1170" y="209" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="15"></text>
-  <text x="40" y="325" fill="#64748b" font-family="Arial" font-size="14">Public-safe conceptual view derived from verified source and local behaviour.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="710" viewBox="0 0 1200 710" role="img" aria-labelledby="title desc">
+  <title id="title">Client Operations Platform public-safe architecture</title>
+  <desc id="desc">Verified layers connect the Next.js interface to validated API routes, domain services, Prisma, PostgreSQL, and reporting.</desc>
+  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M1 1 L11 6 L1 11 Z" fill="#6D28D9"/></marker></defs>
+  <style>.canvas{fill:#FCFCFD}.layer{fill:#FFFFFF;stroke:#D8D5E0;stroke-width:2}.accent{fill:#7C3AED}.tech{fill:#F5F3FF;stroke:#C4B5FD;stroke-width:2}.connector{fill:none;stroke:#6D28D9;stroke-width:3}.title{fill:#262330;font:700 30px Arial,Helvetica,sans-serif}.subtitle{fill:#625D6B;font:400 18px Arial,Helvetica,sans-serif}.label{fill:#4F4659;font:700 18px Arial,Helvetica,sans-serif;letter-spacing:1px}.detail{fill:#262330;font:700 20px Arial,Helvetica,sans-serif}</style>
+  <rect class="canvas" width="1200" height="710"/><text class="title" x="60" y="54">Public-safe architecture</text><text class="subtitle" x="60" y="84">Client Operations Platform · compact verified layers</text>
+  <rect class="layer" x="140" y="112" width="920" height="82" rx="12"/><rect class="accent" x="140" y="112" width="8" height="82" rx="4"/><text class="label" x="180" y="146">USER EXPERIENCE</text><text class="detail" x="180" y="176">Next.js interface</text>
+  <path class="connector" d="M600 194 V224" marker-end="url(#arrow)"/><rect class="layer" x="140" y="230" width="920" height="82" rx="12"/><rect class="accent" x="140" y="230" width="8" height="82" rx="4"/><text class="label" x="180" y="264">APPLICATION AND API</text><text class="detail" x="180" y="294">Validated API routes</text>
+  <path class="connector" d="M600 312 V342" marker-end="url(#arrow)"/><rect class="layer" x="140" y="348" width="920" height="82" rx="12"/><rect class="accent" x="140" y="348" width="8" height="82" rx="4"/><text class="label" x="180" y="382">BUSINESS LOGIC</text><text class="detail" x="180" y="412">Domain services</text>
+  <path class="connector" d="M600 430 V460" marker-end="url(#arrow)"/><rect class="layer" x="140" y="466" width="920" height="82" rx="12"/><rect class="accent" x="140" y="466" width="8" height="82" rx="4"/><text class="label" x="180" y="500">DATA AND STORAGE</text><rect class="tech" x="500" y="482" width="235" height="50" rx="9"/><text class="detail" x="617.5" y="514" text-anchor="middle">Prisma data layer</text><path class="connector" d="M735 507 H769" marker-end="url(#arrow)"/><rect class="tech" x="781" y="482" width="225" height="50" rx="9"/><text class="detail" x="893.5" y="514" text-anchor="middle">PostgreSQL schema</text>
+  <path class="connector" d="M600 548 V578" marker-end="url(#arrow)"/><rect class="layer" x="140" y="584" width="920" height="82" rx="12"/><rect class="accent" x="140" y="584" width="8" height="82" rx="4"/><text class="label" x="180" y="618">VERIFIED OUTPUT BOUNDARY</text><text class="detail" x="180" y="648">Reports</text>
 </svg>
