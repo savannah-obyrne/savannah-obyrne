@@ -16,7 +16,14 @@ Source, relational schema, routes, and tests verify booking-related records, par
 
 ## Main workflows
 
-![Client operations workflow](diagrams/workflow.svg)
+```text
+Customer request
+→ participant details
+→ waiver and guardian validation
+→ payment status
+→ staff review
+→ check-in and reporting
+```
 
 ## Contribution and responsibilities
 
@@ -30,15 +37,11 @@ I led the product and workflow design, defined the important business rules and 
 
 ## Technical architecture
 
-![Public-safe architecture](diagrams/architecture.svg)
-
 The inspected implementation uses Next.js 16, React 19, TypeScript, Prisma, a PostgreSQL schema, Vitest, and AWS CDK configuration. Deployment preparation is not described as a verified deployment.
 
 ## Data and workflow design
 
-![Sanitized data relationships](diagrams/data.svg)
-
-The source schema represents customers, players, guardians, bookings, booking participants, waivers, payments, and daily check-in records. The ERD shows only relationships and optionality verified from the implemented Prisma schema.
+The source schema represents customers, players, guardians, bookings, booking participants, waivers, payments, and daily check-in records. The documented relationships and optionality are verified from the implemented Prisma schema.
 
 ## Validation, permissions, and safeguards
 
@@ -65,4 +68,4 @@ Substantial active application with strong automated and build evidence. The evi
 
 ## Private repository and confidentiality
 
-The full repository remains private. This case study includes real interfaces captured from a temporary anonymized local copy, a public-safe architecture view, schema-derived relationships, verified counts, and narrow code excerpts. The underlying client identity and repository are not included.
+The full repository remains private. This case study includes real interfaces captured from a temporary anonymized local copy, schema-derived relationship evidence, verified counts, and narrow code excerpts. The underlying client identity and repository are not included.
