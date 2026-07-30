@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="360" viewBox="0 0 1320 360" role="img" aria-labelledby="title desc">
+  <title id="title">Public-Safe Architecture</title><desc id="desc">content brand systems</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#8b5cf6"/></marker></defs>
+  <rect width="100%" height="100%" fill="#090711"/>
+  <text x="40" y="55" fill="#f8fafc" font-family="Arial" font-size="30" font-weight="700">Public-Safe Architecture</text>
+  <text x="40" y="88" fill="#94a3b8" font-family="Arial" font-size="16">content brand systems</text>
+  <line x1="220" y1="191" x2="240" y2="191" stroke="#8b5cf6" stroke-width="4" marker-end="url(#arrow)"/><rect x="40" y="150" width="180" height="82" rx="14" fill="#171425" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="130" y="185" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="700">Next.js interface</text>
+      <text x="130" y="209" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="15"></text>
+<line x1="428" y1="191" x2="448" y2="191" stroke="#8b5cf6" stroke-width="4" marker-end="url(#arrow)"/><rect x="248" y="150" width="180" height="82" rx="14" fill="#171425" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="338" y="185" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="700">FastAPI boundary</text>
+      <text x="338" y="209" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="15"></text>
+<line x1="636" y1="191" x2="656" y2="191" stroke="#8b5cf6" stroke-width="4" marker-end="url(#arrow)"/><rect x="456" y="150" width="180" height="82" rx="14" fill="#171425" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="546" y="185" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="700">Domain services</text>
+      <text x="546" y="209" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="15"></text>
+<line x1="844" y1="191" x2="864" y2="191" stroke="#8b5cf6" stroke-width="4" marker-end="url(#arrow)"/><rect x="664" y="150" width="180" height="82" rx="14" fill="#171425" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="754" y="185" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="700">SQLAlchemy models</text>
+      <text x="754" y="209" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="15"></text>
+<line x1="1052" y1="191" x2="1072" y2="191" stroke="#8b5cf6" stroke-width="4" marker-end="url(#arrow)"/><rect x="872" y="150" width="180" height="82" rx="14" fill="#171425" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="962" y="185" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="700">Local SQLite</text>
+      <text x="962" y="209" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="15"></text>
+<rect x="1080" y="150" width="180" height="82" rx="14" fill="#171425" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="1170" y="185" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="700">Export files</text>
+      <text x="1170" y="209" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="15"></text>
+  <text x="40" y="325" fill="#64748b" font-family="Arial" font-size="14">Public-safe conceptual view derived from verified source and local behaviour.</text>
+</svg>

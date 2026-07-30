@@ -1,0 +1,12 @@
+flowchart LR
+  N0["Next.js interface"]
+  N1["FastAPI boundary"]
+  N2["Domain services"]
+  N3["SQLAlchemy models"]
+  N4["Local SQLite"]
+  N5["Export files"]
+  N0 --> N1
+  N1 --> N2
+  N2 --> N3
+  N3 --> N4
+  N4 --> N5

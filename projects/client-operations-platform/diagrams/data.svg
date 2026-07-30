@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="760" viewBox="0 0 1320 760" role="img" aria-labelledby="title desc">
+  <title id="title">Client Operations relational data model</title>
+  <desc id="desc">Public-safe schema-derived relationships for customers, players, guardians, bookings, participants, waivers, payments, and daily check-in records.</desc>
+  <style>
+    .bg{fill:#090711}.panel{fill:#12101d;stroke:#302a48}.entity{fill:#1a1728;stroke:#8b5cf6;stroke-width:2}
+    .title{fill:#f8fafc;font:700 30px Arial}.subtitle{fill:#a8a0bd;font:16px Arial}
+    .name{fill:#f8fafc;font:700 17px Arial}.field{fill:#cbd5e1;font:14px Arial}.rel{stroke:#9b87f5;stroke-width:2}
+    .card{fill:#c4b5fd;font:700 13px Arial}.note{fill:#8f88a3;font:13px Arial}
+  </style>
+  <rect class="bg" width="1320" height="760"/>
+  <text class="title" x="44" y="54">Schema-derived relational data model</text>
+  <text class="subtitle" x="44" y="84">Cardinalities reflect required and optional foreign keys in the implemented Prisma schema.</text>
+  <rect class="panel" x="40" y="110" width="610" height="575" rx="18"/>
+  <rect class="panel" x="670" y="110" width="610" height="575" rx="18"/>
+  <text class="subtitle" x="68" y="145">Customer and booking records</text>
+  <text class="subtitle" x="698" y="145">Safety, payment, and attendance records</text>
+
+  <line class="rel" x1="205" y1="235" x2="345" y2="195"/><text class="card" x="252" y="202">1 → 0..*</text>
+  <line class="rel" x1="205" y1="245" x2="345" y2="315"/><text class="card" x="252" y="285">1 → 0..*</text>
+  <line class="rel" x1="205" y1="255" x2="345" y2="455"/><text class="card" x="252" y="368">1 → 0..*</text>
+  <line class="rel" x1="495" y1="455" x2="495" y2="560"/><text class="card" x="505" y="516">1 → 0..*</text>
+  <line class="rel" x1="495" y1="195" x2="495" y2="560"/><text class="card" x="505" y="377">0..1 → 0..*</text>
+  <line class="rel" x1="495" y1="315" x2="495" y2="560"/><text class="card" x="505" y="438">0..1 → 0..*</text>
+
+  <rect class="entity" x="80" y="195" width="125" height="85" rx="12"/>
+  <text class="name" x="142" y="230" text-anchor="middle">Customer</text><text class="field" x="142" y="255" text-anchor="middle">primary record</text>
+  <rect class="entity" x="345" y="155" width="150" height="80" rx="12"/>
+  <text class="name" x="420" y="190" text-anchor="middle">Player</text><text class="field" x="420" y="214" text-anchor="middle">customerId required</text>
+  <rect class="entity" x="345" y="275" width="150" height="80" rx="12"/>
+  <text class="name" x="420" y="310" text-anchor="middle">Guardian</text><text class="field" x="420" y="334" text-anchor="middle">customerId optional</text>
+  <rect class="entity" x="345" y="415" width="150" height="80" rx="12"/>
+  <text class="name" x="420" y="450" text-anchor="middle">Booking</text><text class="field" x="420" y="474" text-anchor="middle">customerId required</text>
+  <rect class="entity" x="390" y="560" width="210" height="82" rx="12"/>
+  <text class="name" x="495" y="595" text-anchor="middle">Booking Participant</text>
+  <text class="field" x="495" y="620" text-anchor="middle">booking required; player/guardian optional</text>
+
+  <line class="rel" x1="835" y1="200" x2="1040" y2="195"/><text class="card" x="905" y="187">1 → 0..*</text>
+  <line class="rel" x1="835" y1="260" x2="1040" y2="195"/><text class="card" x="908" y="235">0..1 → 0..*</text>
+  <line class="rel" x1="835" y1="390" x2="1040" y2="195"/><text class="card" x="920" y="305">0..1 → 0..*</text>
+  <line class="rel" x1="835" y1="390" x2="1040" y2="385"/><text class="card" x="910" y="378">0..1 → 0..*</text>
+  <line class="rel" x1="835" y1="520" x2="1040" y2="385"/><text class="card" x="918" y="465">1 → 0..*</text>
+  <line class="rel" x1="835" y1="200" x2="1040" y2="570"/><text class="card" x="918" y="490">1 → 0..*</text>
+  <line class="rel" x1="835" y1="390" x2="1040" y2="570"/><text class="card" x="918" y="550">0..1 → 0..*</text>
+
+  <rect class="entity" x="705" y="160" width="130" height="80" rx="12"/>
+  <text class="name" x="770" y="195" text-anchor="middle">Player</text><text class="field" x="770" y="219" text-anchor="middle">required parent</text>
+  <rect class="entity" x="705" y="250" width="130" height="80" rx="12"/>
+  <text class="name" x="770" y="285" text-anchor="middle">Guardian</text><text class="field" x="770" y="309" text-anchor="middle">optional parent</text>
+  <rect class="entity" x="705" y="350" width="130" height="80" rx="12"/>
+  <text class="name" x="770" y="385" text-anchor="middle">Booking</text><text class="field" x="770" y="409" text-anchor="middle">optional parent</text>
+  <rect class="entity" x="705" y="480" width="130" height="80" rx="12"/>
+  <text class="name" x="770" y="515" text-anchor="middle">Customer</text><text class="field" x="770" y="539" text-anchor="middle">required parent</text>
+  <rect class="entity" x="1040" y="155" width="170" height="80" rx="12"/>
+  <text class="name" x="1125" y="190" text-anchor="middle">Waiver</text><text class="field" x="1125" y="214" text-anchor="middle">player required</text>
+  <rect class="entity" x="1040" y="345" width="170" height="80" rx="12"/>
+  <text class="name" x="1125" y="380" text-anchor="middle">Payment</text><text class="field" x="1125" y="404" text-anchor="middle">customer required</text>
+  <rect class="entity" x="1040" y="530" width="170" height="80" rx="12"/>
+  <text class="name" x="1125" y="565" text-anchor="middle">Daily Check-in</text><text class="field" x="1125" y="589" text-anchor="middle">player + play date unique</text>
+  <text class="note" x="44" y="724">Public labels are unchanged domain terms except “Daily Check-in,” which summarizes the implemented daily player-pass record.</text>
+</svg>

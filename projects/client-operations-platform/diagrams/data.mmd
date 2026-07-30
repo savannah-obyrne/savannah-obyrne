@@ -1,0 +1,14 @@
+erDiagram
+  CUSTOMER ||--o{ PLAYER : owns
+  CUSTOMER ||--o{ BOOKING : creates
+  CUSTOMER ||--o{ PAYMENT : makes
+  CUSTOMER o|--o{ BOOKING_PARTICIPANT : may_claim
+  PLAYER o|--o{ BOOKING_PARTICIPANT : may_fill
+  GUARDIAN o|--o{ BOOKING_PARTICIPANT : may_support
+  BOOKING ||--o{ BOOKING_PARTICIPANT : contains
+  PLAYER ||--o{ WAIVER : signs
+  GUARDIAN o|--o{ WAIVER : may_sign_for
+  BOOKING o|--o{ WAIVER : may_scope
+  BOOKING o|--o{ PAYMENT : may_receive
+  PLAYER ||--o{ DAILY_CHECK_IN : records
+  BOOKING o|--o{ DAILY_CHECK_IN : may_group
