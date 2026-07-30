@@ -1,39 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="620" viewBox="0 0 1320 620" role="img" aria-labelledby="title desc">
-  <title id="title">Content Workflow Studio relational data model</title>
-  <desc id="desc">A project has zero or more research questions, research sources, revisions, approvals, history events, and export packages.</desc>
-  <style>
-    .bg{fill:#090711}.entity{fill:#1a1728;stroke:#8b5cf6;stroke-width:2}.hub{fill:#241b3a;stroke:#c084fc;stroke-width:3}
-    .title{fill:#f8fafc;font:700 30px Arial}.subtitle{fill:#a8a0bd;font:16px Arial}.name{fill:#f8fafc;font:700 17px Arial}
-    .field{fill:#cbd5e1;font:14px Arial}.rel{stroke:#9b87f5;stroke-width:2}.card{fill:#c4b5fd;font:700 13px Arial}.note{fill:#8f88a3;font:13px Arial}
-  </style>
-  <rect class="bg" width="1320" height="620"/>
-  <text class="title" x="44" y="54">Schema-derived relational data model</text>
-  <text class="subtitle" x="44" y="84">Only foreign-key relationships verified in the implemented SQLAlchemy models are shown.</text>
-
-  <line class="rel" x1="660" y1="300" x2="250" y2="170"/><text class="card" x="420" y="220">1 → 0..*</text>
-  <line class="rel" x1="660" y1="300" x2="250" y2="300"/><text class="card" x="420" y="289">1 → 0..*</text>
-  <line class="rel" x1="660" y1="300" x2="250" y2="430"/><text class="card" x="420" y="380">1 → 0..*</text>
-  <line class="rel" x1="660" y1="300" x2="1070" y2="170"/><text class="card" x="845" y="220">1 → 0..*</text>
-  <line class="rel" x1="660" y1="300" x2="1070" y2="300"/><text class="card" x="845" y="289">1 → 0..*</text>
-  <line class="rel" x1="660" y1="300" x2="1070" y2="430"/><text class="card" x="845" y="380">1 → 0..*</text>
-
-  <rect class="hub" x="555" y="255" width="210" height="90" rx="16"/>
-  <text class="name" x="660" y="293" text-anchor="middle">Project</text>
-  <text class="field" x="660" y="319" text-anchor="middle">primary workflow record</text>
-
-  <rect class="entity" x="120" y="130" width="230" height="80" rx="12"/>
-  <text class="name" x="235" y="165" text-anchor="middle">Research Question</text><text class="field" x="235" y="189" text-anchor="middle">project_id required</text>
-  <rect class="entity" x="120" y="260" width="230" height="80" rx="12"/>
-  <text class="name" x="235" y="295" text-anchor="middle">Research Source</text><text class="field" x="235" y="319" text-anchor="middle">project_id required</text>
-  <rect class="entity" x="120" y="390" width="230" height="80" rx="12"/>
-  <text class="name" x="235" y="425" text-anchor="middle">Revision</text><text class="field" x="235" y="449" text-anchor="middle">project + kind + number unique</text>
-
-  <rect class="entity" x="970" y="130" width="230" height="80" rx="12"/>
-  <text class="name" x="1085" y="165" text-anchor="middle">Approval</text><text class="field" x="1085" y="189" text-anchor="middle">project_id required</text>
-  <rect class="entity" x="970" y="260" width="230" height="80" rx="12"/>
-  <text class="name" x="1085" y="295" text-anchor="middle">History Event</text><text class="field" x="1085" y="319" text-anchor="middle">project_id required</text>
-  <rect class="entity" x="970" y="390" width="230" height="80" rx="12"/>
-  <text class="name" x="1085" y="425" text-anchor="middle">Export Package</text><text class="field" x="1085" y="449" text-anchor="middle">project_id required</text>
-
-  <text class="note" x="44" y="565">Approval records carry a revision identifier in application logic, but no direct database foreign key is claimed in this diagram.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="810" viewBox="0 0 1200 810" role="img" aria-labelledby="title desc">
+  <title id="title">Content and Brand Systems relational data model</title>
+  <desc id="desc">Project is the central record with verified one-to-many relationships to research questions, research sources, revisions, approvals, history events, and export packages.</desc>
+  <style>.canvas{fill:#FCFCFD}.entity{fill:#FFFFFF;stroke:#D8D5E0;stroke-width:2}.central{fill:#F0EAFF;stroke:#7C3AED;stroke-width:3}.connector{fill:none;stroke:#6D28D9;stroke-width:2.5}.labelBg{fill:#FCFCFD}.cardinalityBg{fill:#F0EAFF;stroke:#C4B5FD;stroke-width:1.5}.title{fill:#262330;font:700 30px Arial,Helvetica,sans-serif}.subtitle{fill:#625D6B;font:400 18px Arial,Helvetica,sans-serif}.entityName{fill:#262330;font:700 20px Arial,Helvetica,sans-serif}.entityType{fill:#625D6B;font:400 18px Arial,Helvetica,sans-serif}.relation{fill:#4F4659;font:700 16px Arial,Helvetica,sans-serif}.cardinality{fill:#4C1D95;font:700 16px Arial,Helvetica,sans-serif}</style>
+  <rect class="canvas" width="1200" height="810"/><text class="title" x="60" y="54">Schema-derived relational data model</text><text class="subtitle" x="60" y="84">Content &amp; Brand Systems · verified one-to-many foreign-key relationships</text>
+  <rect class="central" x="420" y="115" width="360" height="90" rx="14"/><text class="entityName" x="600" y="152" text-anchor="middle">Project</text><text class="entityType" x="600" y="182" text-anchor="middle">central record</text>
+  <path class="connector" d="M600 205 V710"/><path class="connector" d="M390 320 H810"/><path class="connector" d="M390 510 H810"/><path class="connector" d="M390 700 H810"/>
+  <rect class="entity" x="80" y="275" width="310" height="90" rx="12"/><text class="entityName" x="235" y="313" text-anchor="middle">Research Question</text><text class="entityType" x="235" y="343" text-anchor="middle">project relationship</text>
+  <rect class="entity" x="810" y="275" width="310" height="90" rx="12"/><text class="entityName" x="965" y="313" text-anchor="middle">Research Source</text><text class="entityType" x="965" y="343" text-anchor="middle">project relationship</text>
+  <rect class="entity" x="80" y="465" width="310" height="90" rx="12"/><text class="entityName" x="235" y="503" text-anchor="middle">Revision</text><text class="entityType" x="235" y="533" text-anchor="middle">project relationship</text>
+  <rect class="entity" x="810" y="465" width="310" height="90" rx="12"/><text class="entityName" x="965" y="503" text-anchor="middle">Approval</text><text class="entityType" x="965" y="533" text-anchor="middle">project relationship</text>
+  <rect class="entity" x="80" y="655" width="310" height="90" rx="12"/><text class="entityName" x="235" y="693" text-anchor="middle">History Event</text><text class="entityType" x="235" y="723" text-anchor="middle">project relationship</text>
+  <rect class="entity" x="810" y="655" width="310" height="90" rx="12"/><text class="entityName" x="965" y="693" text-anchor="middle">Export Package</text><text class="entityType" x="965" y="723" text-anchor="middle">project relationship</text>
+  <g><rect class="labelBg" x="454" y="296" width="82" height="24" rx="5"/><text class="relation" x="495" y="313" text-anchor="middle">owns</text><rect class="cardinalityBg" x="398" y="331" width="58" height="28" rx="7"/><text class="cardinality" x="427" y="350" text-anchor="middle">0..*</text><rect class="cardinalityBg" x="556" y="331" width="42" height="28" rx="7"/><text class="cardinality" x="577" y="350" text-anchor="middle">1</text></g>
+  <g><rect class="labelBg" x="664" y="296" width="82" height="24" rx="5"/><text class="relation" x="705" y="313" text-anchor="middle">owns</text><rect class="cardinalityBg" x="602" y="331" width="42" height="28" rx="7"/><text class="cardinality" x="623" y="350" text-anchor="middle">1</text><rect class="cardinalityBg" x="744" y="331" width="58" height="28" rx="7"/><text class="cardinality" x="773" y="350" text-anchor="middle">0..*</text></g>
+  <g><rect class="labelBg" x="446" y="486" width="98" height="24" rx="5"/><text class="relation" x="495" y="503" text-anchor="middle">versions</text><rect class="cardinalityBg" x="398" y="521" width="58" height="28" rx="7"/><text class="cardinality" x="427" y="540" text-anchor="middle">0..*</text><rect class="cardinalityBg" x="556" y="521" width="42" height="28" rx="7"/><text class="cardinality" x="577" y="540" text-anchor="middle">1</text></g>
+  <g><rect class="labelBg" x="654" y="486" width="102" height="24" rx="5"/><text class="relation" x="705" y="503" text-anchor="middle">records</text><rect class="cardinalityBg" x="602" y="521" width="42" height="28" rx="7"/><text class="cardinality" x="623" y="540" text-anchor="middle">1</text><rect class="cardinalityBg" x="744" y="521" width="58" height="28" rx="7"/><text class="cardinality" x="773" y="540" text-anchor="middle">0..*</text></g>
+  <g><rect class="labelBg" x="444" y="676" width="102" height="24" rx="5"/><text class="relation" x="495" y="693" text-anchor="middle">records</text><rect class="cardinalityBg" x="398" y="711" width="58" height="28" rx="7"/><text class="cardinality" x="427" y="730" text-anchor="middle">0..*</text><rect class="cardinalityBg" x="556" y="711" width="42" height="28" rx="7"/><text class="cardinality" x="577" y="730" text-anchor="middle">1</text></g>
+  <g><rect class="labelBg" x="654" y="676" width="102" height="24" rx="5"/><text class="relation" x="705" y="693" text-anchor="middle">creates</text><rect class="cardinalityBg" x="602" y="711" width="42" height="28" rx="7"/><text class="cardinality" x="623" y="730" text-anchor="middle">1</text><rect class="cardinalityBg" x="744" y="711" width="58" height="28" rx="7"/><text class="cardinality" x="773" y="730" text-anchor="middle">0..*</text></g>
 </svg>
