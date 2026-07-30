@@ -1,0 +1,22 @@
+%% Public SVG renders this unchanged model as a layered two-column tree.
+%%{init: {"theme":"base","flowchart":{"curve":"step","nodeSpacing":40,"rankSpacing":52},"themeVariables":{"background":"#FCFCFD","primaryColor":"#FFFFFF","primaryTextColor":"#262330","primaryBorderColor":"#8B5CF6","lineColor":"#6D28D9","fontFamily":"Arial, Helvetica, sans-serif","fontSize":"18px"}}}%%
+flowchart TB
+  PROJECT["Project"]
+  RESEARCH_QUESTION["Research Question"]
+  RESEARCH_SOURCE["Research Source"]
+  REVISION["Revision"]
+  APPROVAL["Approval"]
+  HISTORY_EVENT["History Event"]
+  EXPORT_PACKAGE["Export Package"]
+
+  PROJECT -- "1 · owns · 0..*" --> RESEARCH_QUESTION
+  PROJECT -- "1 · owns · 0..*" --> RESEARCH_SOURCE
+  PROJECT -- "1 · versions · 0..*" --> REVISION
+  PROJECT -- "1 · records · 0..*" --> APPROVAL
+  PROJECT -- "1 · records · 0..*" --> HISTORY_EVENT
+  PROJECT -- "1 · creates · 0..*" --> EXPORT_PACKAGE
+
+  classDef entity fill:#FFFFFF,stroke:#8B5CF6,color:#262330,stroke-width:2px;
+  classDef central fill:#F0EAFF,stroke:#6D28D9,color:#262330,stroke-width:3px;
+  class PROJECT central;
+  class RESEARCH_QUESTION,RESEARCH_SOURCE,REVISION,APPROVAL,HISTORY_EVENT,EXPORT_PACKAGE entity;
