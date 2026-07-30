@@ -44,20 +44,10 @@ I build software around real operational problems: understanding the workflow, d
 - **Delivery foundations:** Git, GitHub, AWS configuration and migration preparation, Vercel-oriented web applications
 [See the technical proof summary](proof/technical-proof-summary.md)
 
-## Development approach
-
-I start with the user and operating workflow, then make the business rules and data relationships explicit before treating implementation as complete. AI coding agents help me investigate and implement, but I review the resulting changes and use automated checks, tests, source inspection, and hands-on verification to find problems and confirm important behaviour.
-
 ## Private-work explanation
 
 Most of the applications shown here come from private repositories or confidential client work. The linked case studies use sanitized screenshots, public-safe diagrams, verified quality results, and narrow code excerpts so the product and technical work can be evaluated without exposing customer data or confidential implementation details.
 
 [Read the public-safe private-work explanation](proof/private-work-explanation.md)
 
-## Current role direction
 
-I am pursuing product-development work where I can contribute to SaaS applications, operational workflows, troubleshooting, testing, and thoughtful AI-assisted delivery while continuing to deepen my engineering practice within a collaborative team.
-
-## Contact
-
-[savannahoby@gmail.com](mailto:savannahoby@gmail.com)
