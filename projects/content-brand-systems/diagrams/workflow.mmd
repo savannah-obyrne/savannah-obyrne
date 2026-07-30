@@ -1,12 +1,17 @@
-flowchart LR
-  N0["Project foundation"]
-  N1["Research evidence"]
-  N2["Direction approval"]
-  N3["Lesson and script"]
-  N4["Human approval"]
-  N5["Export package"]
-  N0 --> N1
-  N1 --> N2
+%% Public SVG uses the same six verified steps in a two-row numbered sequence.
+%%{init: {"theme":"base","flowchart":{"curve":"linear","nodeSpacing":32,"rankSpacing":56},"themeVariables":{"background":"#FCFCFD","primaryColor":"#F7F5FF","primaryTextColor":"#262330","primaryBorderColor":"#8B5CF6","lineColor":"#6D28D9","fontFamily":"Arial, Helvetica, sans-serif","fontSize":"18px"}}}%%
+flowchart TB
+  subgraph R1[" "]
+    direction LR
+    N0["1 · Foundation<br/>Project foundation"] --> N1["2 · Evidence<br/>Research evidence"] --> N2["3 · Direction<br/>Direction approval"]
+  end
+  subgraph R2[" "]
+    direction RL
+    N3["4 · Artifacts<br/>Lesson and script"] --> N4["5 · Approval<br/>Human approval"] --> N5["6 · Delivery<br/>Export package"]
+  end
   N2 --> N3
-  N3 --> N4
-  N4 --> N5
+
+  classDef stage fill:#F7F5FF,stroke:#8B5CF6,color:#262330,stroke-width:2px;
+  class N0,N1,N2,N3,N4,N5 stage;
+  style R1 fill:transparent,stroke:transparent
+  style R2 fill:transparent,stroke:transparent
